@@ -1,14 +1,14 @@
 [ 
     {
         "name": "manege",
-        "path": "2019_5 juin14h34_ manège_roumanie",
+        "path": "2019_5juin14h34_manège_roumanie",
         "format" : "jpg",
         "themes" : ["enfance", "roumanie", "est", "abandon"]
     },
     {
         "name": "walkman",
-        "path": "2019_15 avril 12h35_ Walkman",
-        "format" : "pdf",
+        "path": "2019_15avril12h35_Walkman",
+        "format" : "txt",
         "themes" : ["musique", "lgbt", "usa", "jeunesse"]
     },
     {
