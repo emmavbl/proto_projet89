@@ -2,7 +2,7 @@ import './Document.css'
 import raw from 'raw.macro';
 
 
-function Document({path, desc, format, themes}){
+function Document({path, desc, format, themes, onClick}){
     return(
         <div className="souvenir">
             <h1>{desc}</h1>
@@ -12,7 +12,7 @@ function Document({path, desc, format, themes}){
             }
             <div className="themes">
                 {themes.map((themes, index) =>(
-                    <button key={index}>{themes}</button>
+                    <button key={index} onClick={onClick}>{themes}</button>
                 ))}
             </div>
         </div>
