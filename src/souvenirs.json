@@ -3,7 +3,7 @@
         "name": "manege",
         "path": "2019_5juin14h34_manège_roumanie",
         "format" : "jpg",
-        "themes" : ["enfance", "roumanie", "est", "abandon"]
+        "themes" : ["enfance", "roumanie", "est", "archive"]
     },
     {
         "name": "walkman",
@@ -12,9 +12,36 @@
         "themes" : ["musique", "lgbt", "usa", "jeunesse"]
     },
     {
-       "name": "tambour",
-        "path": "2020_27 mai 23h19_Le tambour",
-        "format" : "jpg",
-        "themes" : ["musique", "bicentenaire", "france", "jeunesse"]
+        "name": "tambour",
+         "path": "2020_27 mai 23h19_Le tambour",
+         "format" : "jpg",
+         "themes" : ["musique", "bicentenaire", "france", "jeunesse"]
+    },
+    {
+        "name": "famille",
+         "path": "2019_juin_photo de famille_Eglantine Agathe et Marguerite _4 mois_ juillet 1989",
+         "format" : "jpg",
+         "themes" : ["enfance", "bicentenaire", "france", "fraterie"]
+    },
+    {
+        "name": "tour trump",
+         "path": "2020_22 avril_Tour de  Trump",
+         "format" : "jpg",
+         "themes" : ["jeunesse", "usa", "architecture"]
+    },
+    {
+        "name": "cafe",
+         "path": "2020_28 mai 00h17_Café parisien",
+         "format" : "txt",
+         "themes" : ["café", "enfance", "bicentenaire", "france"]
+    },
+    {
+        "name": "poste",
+         "path": "IMG_20190804_180228",
+         "format" : "jpg",
+         "themes" : ["berlin", "est", "archive", "architecture"]
     }
-]
+    
+    
+ 
+ ]
