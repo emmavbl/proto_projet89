@@ -3,13 +3,17 @@
     max-height: 800px;
 }
 
+.souvenir h1{
+    text-transform: capitalize;
+}
+
 .souvenir p{
     max-width:500px;
     font-size: 0.8em;
     text-align: justify;
 }
 
-.themes button{
+button{
     border:none;
     text-transform: uppercase;
     background:rgba(255, 255, 255, 0.2);
@@ -21,8 +25,9 @@
     border-radius: 1rem;
 }
 
-.themes button:hover, .themes button:hover{
+button:hover, button:hover{
     background:rgba(255, 255, 255, 1);
     color: black;
+    transform: scale(1.1);
 
 }
