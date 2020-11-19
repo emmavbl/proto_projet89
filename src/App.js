@@ -55,7 +55,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {(this.state.history.length > 1) && <History onClick={this.previousSouvenir} />}
           <Document 
             path = {souvenir.path}
             desc = {souvenir.name}
@@ -63,6 +62,7 @@ class App extends Component {
             themes = {souvenir.themes}
             onClick = {this.nextSouvenir}
           />
+          {(this.state.history.length > 1) && <History onClick={this.previousSouvenir} />}
         </header>
       </div>
     );

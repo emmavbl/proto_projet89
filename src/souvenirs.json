@@ -3,7 +3,7 @@
         "name": "manege",
         "path": "2019_5juin14h34_manège_roumanie",
         "format" : "jpg",
-        "themes" : ["enfance", "roumanie", "est", "archive"]
+        "themes" : ["enfance", "roumanie", "est", "archive", "abandon"]
     },
     {
         "name": "walkman",
@@ -40,8 +40,65 @@
          "path": "IMG_20190804_180228",
          "format" : "jpg",
          "themes" : ["berlin", "est", "archive", "architecture"]
-    }
-    
-    
- 
+    },
+    {
+        "name": "montagne",
+         "path": "2019_2 août 7h03_Ste-Victoire",
+         "format" : "txt",
+         "themes" : ["france", "vacances", "enfance", "nature"]
+    },
+    {
+        "name": "distribution",
+         "path": "2019_5 juin 14h34_distribution alimentaire_roumanie",
+         "format" : "jpg",
+         "themes" : ["roumanie", "est", "nourriture"]
+    },
+    {
+        "name": "squat",
+         "path": "2019_19 juin 22h57_Squats",
+         "format" : "txt",
+         "themes" : ["punk", "france", "lsd", "musique"]
+    },
+    {
+        "name": "anniversaire",
+         "path": "2019_27 août_gâteau d_anniversaire",
+         "format" : "jpg",
+         "themes" : ["enfance", "nourriture", "fraterie"]
+    },
+    {
+        "name": "pendant ce temps",
+         "path": "2019_27 août_Tiananmen, Révolution roumaine, et pendant ce temps là…",
+         "format" : "txt",
+         "themes" : ["bicentenaire", "france", "roumanie", "tienanmen", "enfance"]
+    },
+    {
+        "name": "centre commercial",
+         "path": "2020_2 mai_futur centre commercial",
+         "format" : "jpg",
+         "themes" : ["archive", "est", "architecture", "abandon"]
+    },
+    {
+        "name": "poeme",
+         "path": "2020_17 avril 20h38_Poème89",
+         "format" : "txt",
+         "themes" : ["archive", "est", "mur", "amour"]
+    },
+   {
+        "name": "amifil",
+        "path": "2020_17 mars 10h38_AMIFIL",
+        "format" : "txt",
+        "themes" : ["france", "travail"]
+    },
+    {
+        "name": "salon",
+        "path": "2020_21 octobre à 22h38_Salon",
+        "format" : "txt",
+        "themes" : ["est", "mur", "enfance", "musique" ]
+    },
+    {
+        "name": "salon",
+        "path": "IMG_20190804_180354",
+        "format" : "jpg",
+        "themes" : ["est", "archive", "architecture" ]
+    } 
  ]
