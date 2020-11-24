@@ -1,68 +1,53 @@
 import './App.css';
 import data from './souvenirs.json'
 import Document from './Document.js'
-import History from './History.js'
+// import History from './History.js'
 import {React, Component} from 'react';
 
 
 class App extends Component {
   constructor(props){
     super(props)
-    const idFirstSouvenir = Math.floor(Math.random() * data.length);
+    const idFirstMem = Math.floor(Math.random() * data.nodes.length);
+    const firstLink = this.getLink(idFirstMem);
     this.state = {
-      history : [idFirstSouvenir],
-      currentSouv : idFirstSouvenir,
+      // history : [idFirstSouvenir],
+      currentMemory : idFirstMem,
+      currentLink : firstLink,
     };
   }
     
 
-  previousSouvenir = e =>{
-    var copyHistory = this.state.history;
-    var avantDer = copyHistory[copyHistory.length-2];
-    copyHistory.pop()
-    this.setState({history : copyHistory })
-    this.setState({currentSouv : avantDer})
+  getLink(idMem){ 
+    var linkToReturn;
+    data.links.forEach(link => {
+      if (link.source === idMem)
+        linkToReturn = link;
+    })
+    return linkToReturn;
   }
 
-
-  nextSouvenir = e =>{
-    const theme = e.target.textContent;
-    var listSouvenir = [];
-    var newSouvenir;
-    var newSouvenirId = this.state.currentSouv;
-    console.log("click");
-    data.forEach(souvenir => { 
-      if(souvenir.themes.includes(theme)){
-        listSouvenir.push(souvenir);
-      }
+  nextMemory = e =>{
+    const nextMem = this.state.currentLink.target;
+    const nextLink = this.getLink(this.state.currentLink.target);
+    //change currentMemory and current Link
+    this.setState({ 
+      currentMemory: nextMem, 
+      currentLink: nextLink
     })
-    
-    if (listSouvenir.length > 1){
-      while(newSouvenirId === this.state.currentSouv ){
-        newSouvenir = listSouvenir[Math.floor(Math.random() * listSouvenir.length)];
-        newSouvenirId = data.findIndex(((souvenirs) => souvenirs === newSouvenir))
-      }
-    }
-    
-    this.setState({currentSouv : newSouvenirId} )
-    var newHistory = this.state.history.concat(newSouvenirId)
-    this.setState({history : newHistory} )
     
   }
 
   render() {
-    const souvenir = data[this.state.currentSouv]
+    const memory = data.nodes[this.state.currentMemory]
     return (
-      <div className="App">
+      <div className="App" onClick = {this.nextMemory}>
         <header className="App-header">
           <Document 
-            path = {souvenir.path}
-            desc = {souvenir.name}
-            format = {souvenir.format}
-            themes = {souvenir.themes}
-            onClick = {this.nextSouvenir}
+            path = {memory.path}
+            desc = {memory.name}
+            format = {memory.format}
           />
-          {(this.state.history.length > 1) && <History onClick={this.previousSouvenir} />}
         </header>
       </div>
     );

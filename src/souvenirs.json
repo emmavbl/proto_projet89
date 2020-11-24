@@ -1,104 +1,132 @@
-[ 
-    {
-        "name": "manege",
-        "path": "2019_5juin14h34_manège_roumanie",
-        "format" : "jpg",
-        "themes" : ["enfance", "roumanie", "est", "archive", "abandon"]
-    },
-    {
-        "name": "walkman",
-        "path": "2019_15avril12h35_Walkman",
-        "format" : "txt",
-        "themes" : ["musique", "lgbt", "usa", "jeunesse"]
-    },
-    {
-        "name": "tambour",
-         "path": "2020_27 mai 23h19_Le tambour",
-         "format" : "jpg",
-         "themes" : ["musique", "bicentenaire", "france", "jeunesse"]
-    },
-    {
-        "name": "famille",
-         "path": "2019_juin_photo de famille_Eglantine Agathe et Marguerite _4 mois_ juillet 1989",
-         "format" : "jpg",
-         "themes" : ["enfance", "bicentenaire", "france", "fraterie"]
-    },
-    {
-        "name": "tour trump",
-         "path": "2020_22 avril_Tour de  Trump",
-         "format" : "jpg",
-         "themes" : ["jeunesse", "usa", "architecture"]
-    },
-    {
-        "name": "cafe",
-         "path": "2020_28 mai 00h17_Café parisien",
-         "format" : "txt",
-         "themes" : ["café", "enfance", "bicentenaire", "france"]
-    },
-    {
-        "name": "poste",
-         "path": "IMG_20190804_180228",
-         "format" : "jpg",
-         "themes" : ["berlin", "est", "archive", "architecture"]
-    },
-    {
-        "name": "montagne",
-         "path": "2019_2 août 7h03_Ste-Victoire",
-         "format" : "txt",
-         "themes" : ["france", "vacances", "enfance", "nature"]
-    },
-    {
-        "name": "distribution",
-         "path": "2019_5 juin 14h34_distribution alimentaire_roumanie",
-         "format" : "jpg",
-         "themes" : ["roumanie", "est", "nourriture"]
-    },
-    {
-        "name": "squat",
-         "path": "2019_19 juin 22h57_Squats",
-         "format" : "txt",
-         "themes" : ["punk", "france", "lsd", "musique"]
-    },
-    {
-        "name": "anniversaire",
-         "path": "2019_27 août_gâteau d_anniversaire",
-         "format" : "jpg",
-         "themes" : ["enfance", "nourriture", "fraterie"]
-    },
-    {
-        "name": "pendant ce temps",
-         "path": "2019_27 août_Tiananmen, Révolution roumaine, et pendant ce temps là…",
-         "format" : "txt",
-         "themes" : ["bicentenaire", "france", "roumanie", "tienanmen", "enfance"]
-    },
-    {
-        "name": "centre commercial",
-         "path": "2020_2 mai_futur centre commercial",
-         "format" : "jpg",
-         "themes" : ["archive", "est", "architecture", "abandon"]
-    },
-    {
-        "name": "poeme",
-         "path": "2020_17 avril 20h38_Poème89",
-         "format" : "txt",
-         "themes" : ["archive", "est", "mur", "amour"]
-    },
-   {
-        "name": "amifil",
-        "path": "2020_17 mars 10h38_AMIFIL",
-        "format" : "txt",
-        "themes" : ["france", "travail"]
-    },
-    {
-        "name": "salon",
-        "path": "2020_21 octobre à 22h38_Salon",
-        "format" : "txt",
-        "themes" : ["est", "mur", "enfance", "musique" ]
-    },
-    {
-        "name": "salon",
-        "path": "IMG_20190804_180354",
-        "format" : "jpg",
-        "themes" : ["est", "archive", "architecture" ]
-    } 
- ]
+{ 
+    "nodes" :[
+        {
+            "id" : 0,
+            "name": "manege",
+            "path": "2019_5juin14h34_manège_roumanie",
+            "format" : "jpg"
+        },
+        {
+            "id" : 1,
+            "name": "walkman",
+            "path": "2019_15avril12h35_Walkman",
+            "format" : "txt"
+        },
+        {
+            "id" : 2,
+            "name": "tambour",
+            "path": "2020_27 mai 23h19_Le tambour",
+            "format" : "jpg"
+        },
+        {
+            "id" : 3,
+            "name": "famille",
+            "path": "2019_juin_photo de famille_Eglantine Agathe et Marguerite _4 mois_ juillet 1989",
+            "format" : "jpg"
+        },
+        {
+            "id" : 4,
+            "name": "tour trump",
+            "path": "2020_22 avril_Tour de  Trump",
+            "format" : "jpg"
+        },
+        {
+            "id" : 5,
+            "name": "poste",
+            "path": "IMG_20190804_180228",
+            "format" : "jpg"
+        },
+        {
+            "id" : 6,
+            "name": "montagne",
+            "path": "2019_2 août 7h03_Ste-Victoire",
+            "format" : "txt"
+        },
+        {
+            "id" : 7,
+            "name": "distribution",
+            "path": "2019_5 juin 14h34_distribution alimentaire_roumanie",
+            "format" : "jpg"
+        },
+        {
+            "id" : 8,
+            "name": "squat",
+            "path": "2019_19 juin 22h57_Squats",
+            "format" : "txt"
+        },
+        {
+            "id" : 9,
+            "name": "anniversaire",
+            "path": "2019_27 août_gâteau d_anniversaire",
+            "format" : "jpg"
+        },
+
+        {
+            "id" : 10,
+            "name": "centre commercial",
+            "path": "2020_2 mai_futur centre commercial",
+            "format" : "jpg"
+        },
+        
+        {
+            "id" : 11,
+            "name": "salon",
+            "path": "IMG_20190804_180354",
+            "format" : "jpg"
+        } 
+    ],
+    "links" : [
+        {
+            "source" : 0,
+            "target" : 7
+        },
+        {
+            "source" : 7,
+            "target" : 10
+        },
+        {
+            "source" : 10,
+            "target" : 8
+        },
+        {
+            "source" : 8,
+            "target" : 11
+        },
+        {
+            "source" : 11,
+            "target" : 5
+        },
+        {
+            "source" : 5,
+            "target" : 4
+        },
+        {
+            "source" : 8,
+            "target" : 1
+        },
+        {
+            "source" : 1,
+            "target" : 2
+        },
+        {
+            "source" : 2,
+            "target" : 3
+        },
+        {
+            "source" : 3,
+            "target" : 4
+        },
+        {
+            "source" : 4,
+            "target" : 6
+        },
+        {
+            "source" : 6,
+            "target" : 9
+        },
+        {
+            "source" : 9,
+            "target" : 0
+        }
+    ]
+}
