@@ -9,31 +9,34 @@ class App extends Component {
   constructor(props){
     super(props)
     const idFirstMem = Math.floor(Math.random() * data.nodes.length);
-    const firstLink = this.getLink(idFirstMem);
+    const firstLink = this.getLinks(idFirstMem);
     this.state = {
       // history : [idFirstSouvenir],
       currentMemory : idFirstMem,
-      currentLink : firstLink,
+      links : firstLink,
     };
   }
     
 
-  getLink(idMem){ 
-    var linkToReturn;
+  getLinks(idMem){ 
+    var linkToReturn = [];
     data.links.forEach(link => {
-      if (link.source === idMem)
-        linkToReturn = link;
+      if (link.source === idMem){
+        linkToReturn.push(link);
+      }
     })
     return linkToReturn;
   }
 
   nextMemory = e =>{
-    const nextMem = this.state.currentLink.target;
-    const nextLink = this.getLink(this.state.currentLink.target);
+    const nextMem = this.state.links[0].target;
+    const nextLink = this.getLinks(nextMem);
+    console.log(nextLink);
+
     //change currentMemory and current Link
     this.setState({ 
       currentMemory: nextMem, 
-      currentLink: nextLink
+      links: nextLink
     })
     
   }
