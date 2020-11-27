@@ -32,100 +32,80 @@
         },
         {
             "id" : 5,
-            "name": "poste",
-            "path": "IMG_20190804_180228",
-            "format" : "jpg"
-        },
-        {
-            "id" : 6,
-            "name": "montagne",
-            "path": "2019_2 août 7h03_Ste-Victoire",
-            "format" : "txt"
-        },
-        {
-            "id" : 7,
             "name": "distribution",
             "path": "2019_5 juin 14h34_distribution alimentaire_roumanie",
             "format" : "jpg"
         },
         {
-            "id" : 8,
+            "id" : 6,
             "name": "squat",
             "path": "2019_19 juin 22h57_Squats",
             "format" : "txt"
         },
         {
-            "id" : 9,
+            "id" : 7,
             "name": "anniversaire",
             "path": "2019_27 août_gâteau d_anniversaire",
             "format" : "jpg"
         },
 
         {
-            "id" : 10,
+            "id" : 8,
             "name": "centre commercial",
             "path": "2020_2 mai_futur centre commercial",
             "format" : "jpg"
         },
         
         {
-            "id" : 11,
+            "id" : 9,
             "name": "salon",
-            "path": "IMG_20190804_180354",
-            "format" : "jpg"
+            "path": "2020_21 octobre à 22h38_Salon",
+            "format" : "txt"
         } 
     ],
     "links" : [
         {
             "source" : 0,
-            "target" : 7
-        },
-        {
-            "source" : 7,
-            "target" : 10
-        },
-        {
-            "source" : 10,
-            "target" : 8
-        },
-        {
-            "source" : 8,
-            "target" : 11
-        },
-        {
-            "source" : 11,
             "target" : 5
         },
         {
             "source" : 5,
-            "target" : 4
-        },
-        {
-            "source" : 8,
-            "target" : 1
-        },
-        {
-            "source" : 1,
-            "target" : 2
-        },
-        {
-            "source" : 2,
-            "target" : 3
-        },
-        {
-            "source" : 3,
-            "target" : 4
-        },
-        {
-            "source" : 4,
-            "target" : 6
-        },
-        {
-            "source" : 6,
             "target" : 9
         },
         {
             "source" : 9,
+            "target" : 3
+        },
+        {
+            "source" : 3,
+            "target" : 7
+        },
+        {
+            "source" : 3,
+            "target" : 2
+        },
+        {
+            "source" : 2,
+            "target" : 4
+        },
+        {
+            "source" : 4,
+            "target" : 1
+        },
+        {
+            "source" : 7,
+            "target" : 1
+        },
+        {
+            "source" : 1,
+            "target" : 6
+        },
+        {
+            "source" : 6,
+            "target" : 8
+        },
+        {
+            "source" : 8,
             "target" : 0
         }
     ]
