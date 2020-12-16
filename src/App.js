@@ -1,6 +1,7 @@
 import './App.css';
 import data from './souvenirs.json'
 import Document from './Document.js'
+import Trails from './Trails.js'
 // import History from './History.js'
 import {React, Component} from 'react';
 import {CSSTransitionGroup} from 'react-transition-group'
@@ -26,7 +27,6 @@ class App extends Component {
         linksToReturn.push(link);
       }
     })
-    console.log(linksToReturn);
     return linksToReturn;
   }
 
@@ -35,7 +35,6 @@ class App extends Component {
     
     const nextMem = this.state.links[linkIndex].target;
     const nextLink = this.getLinks(nextMem);
-    console.log(this);
 
     //change currentMemory and current Link
     this.setState({ 
@@ -49,8 +48,8 @@ class App extends Component {
     const memory = data.nodes[this.state.currentMemory]
     const memId = this.state.links[0].source
     return (
-      <div className="App" onClick = {this.nextMemory}>
-        <header className="App-header">
+      <div className="App">
+        <header className="App-header" onClick = {this.nextMemory}>
           <CSSTransitionGroup 
             transitionName = "example"
             transitionAppear = {false}
@@ -63,8 +62,13 @@ class App extends Component {
               format = {memory.format}
             />
           </CSSTransitionGroup>
-          
         </header>
+
+        <Trails
+          currentNode = {memId}
+        
+        />
+
       </div>
     );
   }
