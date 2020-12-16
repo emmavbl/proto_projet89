@@ -12,3 +12,22 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+example-leave-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
